@@ -1,14 +1,16 @@
 body {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     background-color: rgb(16,16,16);
-    /* background-color: black; */
+    height: 100%;
+    width: 100%;
 }
 
 #pageContent {
-    margin-top: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: auto;
+    height: auto;
 }
 
 #date {
