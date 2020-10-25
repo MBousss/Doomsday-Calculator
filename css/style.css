@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(16,16,16);
+    /* background-color: black; */
+}
+
+#pageContent {
+    margin-top: 50%;
+    width: auto;
+}
+
+#date {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+#date input {
+    width: 150px;
+    text-align: center;
+}
+
+#date button {
+    padding: 12px 28px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    padding-top: 30px;
+    color: white;
+    font-size:  30px;
+    white-space: nowrap;
+    font-family: "Times New Roman", Times, serif;
+}
