@@ -3,7 +3,7 @@ document.querySelector("#datePicker").value = today;
 
 var doomsdayCalander;
 var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', '', '', '', ]
+var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 var anchorCentury = {
     '1800-1899': 'Friday',
     '1900-1999': 'Wednesday',
@@ -35,7 +35,6 @@ function doomsdayCalculate() {
 }
 
 function calculateDoomsDate(closestDoomDay, currentDay, weekDayIndex) {
-
     var difference = Math.abs(closestDoomDay.split(' ')[1] - currentDay) % 7;
 
     if ((difference + weekDayIndex) > weekDays.length - 1) {
@@ -61,6 +60,7 @@ function anchorCenturyDay(currentYear) {
 
 function findClosestDoomsday(currentMonth) {
     var currentMonthName = months[currentMonth - 1];
+    console.log(currentMonth);
 
     for (var i = 0; i < doomsdayCalander.length; i++) {
         var array = doomsdayCalander[i].split(' ');
